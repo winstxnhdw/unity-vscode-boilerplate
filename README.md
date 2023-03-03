@@ -1,6 +1,6 @@
 # unity-vscode-boilerplate
 
-Unity boilerplate with first-class tooling support for [Visual Studio Code](https://code.visualstudio.com/).
+Unity boilerplate with first-class tooling support for [Visual Studio Code](https://code.visualstudio.com/) and built-in support for NuGet packages.
 
 ## Requirements
 
