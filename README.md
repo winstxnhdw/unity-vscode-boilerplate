@@ -20,7 +20,7 @@ dotnet restore .vscode
 
 ### Add NuGet Packages
 
-`UnityNuGet` is a native, fast and lightweight NuGet client wrapper for Unity. Powered by the .NET CLI, say goodbye to the [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity) bloatware!
+`UnityNuGet` is a native, fast and lightweight NuGet client wrapper for Unity. Powered by MSBuild and .NET CLI—say goodbye to the [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity) bloatware!
 
 ```bash
 dotnet add UnityNuGet package <package-name>
