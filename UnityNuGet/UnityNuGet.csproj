@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+
+    <PublishDir>../Assets/NuGet</PublishDir>
+    <TargetFramework>netstandard2.1</TargetFramework>
+
+  </PropertyGroup>
+
+
+  <Target Name="CleanBeforeRestore" BeforeTargets="Restore">
+    <RemoveDir Directories="$(PublishDir)" />
+  </Target>
+
+  <Target Name="CleanAfterPublish" AfterTargets="Publish">
+    <ItemGroup>
+      <PublishedFilesToDelete Include="$(PublishDir)/$(ProjectName).*" />
+    </ItemGroup>
+
+    <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
+    <RemoveDir Directories="$(BaseOutputPath)" />
+    <Delete Files="@(PublishedFilesToDelete)" />
+  </Target>
+
+</Project>

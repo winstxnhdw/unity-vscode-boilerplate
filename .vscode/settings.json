@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+
+  "omnisharp.analyzeOpenDocumentsOnly": true,
+  "omnisharp.enableImportCompletion": true,
+  "omnisharp.organizeImportsOnFormat": true,
+  "omnisharp.useModernNet": false
+}
