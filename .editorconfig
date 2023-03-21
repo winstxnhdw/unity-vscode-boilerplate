@@ -9,9 +9,6 @@ trim_trailing_whitespace = true
 indent_size = 2
 charset = utf-8
 
-[*.{asmdef}]
-indent_size = 2
-
 [Assets/{Scripts,Editor}/**.cs]
 # Basic text
 indent_size = 4
@@ -84,8 +81,11 @@ dotnet_analyzer_diagnostic.category-CodeQuality.severity = warning
 dotnet_analyzer_diagnostic.category-Style.severity = warning
 dotnet_analyzer_diagnostic.category-Performance.severity = warning
 dotnet_analyzer_diagnostic.category-Design.severity = warning
+
+dotnet_diagnostic.IDE0002.severity = none
 dotnet_diagnostic.IDE0044.severity = none
 dotnet_diagnostic.IDE0051.severity = none
 dotnet_diagnostic.IDE0021.severity = none
 dotnet_diagnostic.IDE0022.severity = none
+dotnet_diagnostic.IDE0160.severity = none
 dotnet_diagnostic.CA1001.severity = error
